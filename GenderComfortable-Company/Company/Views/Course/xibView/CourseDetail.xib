@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CourseDetailView" customModule="GenderComfortable_Company" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="740"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbs-D1-21M">
+                    <rect key="frame" x="15" y="16" width="142.5" height="28"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
+                    <color key="textColor" name="labelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyI-Xw-wAS" customClass="ViewCustom" customModule="GenderComfortable_Company" customModuleProvider="target">
+                    <rect key="frame" x="16" y="49" width="382" height="230"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commonImg" translatesAutoresizingMaskIntoConstraints="NO" id="wE5-Au-ImJ">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="230"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wE5-Au-ImJ" secondAttribute="trailing" id="0Qb-1c-whF"/>
+                        <constraint firstItem="wE5-Au-ImJ" firstAttribute="leading" secondItem="hyI-Xw-wAS" secondAttribute="leading" id="8qH-6Y-Umg"/>
+                        <constraint firstAttribute="bottom" secondItem="wE5-Au-ImJ" secondAttribute="bottom" id="Ku6-Av-CLD"/>
+                        <constraint firstAttribute="height" constant="230" id="dY2-JL-yZz"/>
+                        <constraint firstItem="wE5-Au-ImJ" firstAttribute="top" secondItem="hyI-Xw-wAS" secondAttribute="top" id="rve-lS-mrH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mad-ig-GOC">
+                    <rect key="frame" x="15" y="302" width="386" height="21"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                    <color key="textColor" name="labelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Reprehenderit in voluptateLorem ipsum dolor sit er elit lamet, " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pqn-xC-jGH">
+                    <rect key="frame" x="15" y="542.5" width="384" height="49.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certification" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pzw-VL-xJS">
+                    <rect key="frame" x="15" y="518.5" width="386" height="21"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                    <color key="textColor" name="labelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curriculum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Agl-0m-Jw8">
+                    <rect key="frame" x="15" y="602" width="386" height="21"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                    <color key="textColor" name="labelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8dg-0D-F67">
+                    <rect key="frame" x="15" y="326" width="384" height="183.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Agl-0m-Jw8" secondAttribute="trailing" constant="13" id="0LH-bC-Rrq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8dg-0D-F67" secondAttribute="trailing" constant="15" id="189-Wf-baE"/>
+                <constraint firstItem="hyI-Xw-wAS" firstAttribute="top" secondItem="Pbs-D1-21M" secondAttribute="bottom" constant="5" id="3qb-fF-aP3"/>
+                <constraint firstItem="hyI-Xw-wAS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="57g-6Z-8kQ"/>
+                <constraint firstItem="8dg-0D-F67" firstAttribute="top" secondItem="mad-ig-GOC" secondAttribute="bottom" constant="3" id="5S5-xa-V8b"/>
+                <constraint firstItem="Pqn-xC-jGH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="7Rq-Gw-yIB"/>
+                <constraint firstItem="Agl-0m-Jw8" firstAttribute="top" secondItem="Pqn-xC-jGH" secondAttribute="bottom" constant="10" id="CVX-5O-OQS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mad-ig-GOC" secondAttribute="trailing" constant="13" id="Fb8-4A-eR0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hyI-Xw-wAS" secondAttribute="trailing" constant="16" id="Ha8-C9-e9q"/>
+                <constraint firstItem="mad-ig-GOC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="O2H-2b-3B9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pzw-VL-xJS" secondAttribute="trailing" constant="13" id="SdF-HZ-qkJ"/>
+                <constraint firstItem="Pbs-D1-21M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="Vf8-Dk-MH5"/>
+                <constraint firstItem="Pqn-xC-jGH" firstAttribute="top" secondItem="pzw-VL-xJS" secondAttribute="bottom" constant="3" id="Wj4-hz-T8g"/>
+                <constraint firstItem="pzw-VL-xJS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="efV-CB-kc5"/>
+                <constraint firstItem="mad-ig-GOC" firstAttribute="top" secondItem="hyI-Xw-wAS" secondAttribute="bottom" constant="23" id="g3N-md-hPH"/>
+                <constraint firstItem="pzw-VL-xJS" firstAttribute="top" secondItem="8dg-0D-F67" secondAttribute="bottom" constant="9" id="kgy-1W-ML0"/>
+                <constraint firstItem="Agl-0m-Jw8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="o8j-Wh-lCN"/>
+                <constraint firstItem="8dg-0D-F67" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="rKP-Jy-g5b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Pqn-xC-jGH" secondAttribute="trailing" constant="15" id="ryq-PI-4ED"/>
+                <constraint firstItem="Pbs-D1-21M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="vui-Rd-oTn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Agl-0m-Jw8" secondAttribute="bottom" constant="10" id="zhk-wn-btV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-23" y="65"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="commonImg" width="1056" height="714"/>
+        <namedColor name="labelColor">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

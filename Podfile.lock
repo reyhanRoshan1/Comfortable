@@ -1,0 +1,77 @@
+PODS:
+  - AARatingBar (1.2)
+  - Alamofire (5.4.3)
+  - Google-Maps-iOS-Utils (3.10.3):
+    - Google-Maps-iOS-Utils/Clustering (= 3.10.3)
+    - Google-Maps-iOS-Utils/Geometry (= 3.10.3)
+    - Google-Maps-iOS-Utils/GeometryUtils (= 3.10.3)
+    - Google-Maps-iOS-Utils/Heatmap (= 3.10.3)
+    - Google-Maps-iOS-Utils/QuadTree (= 3.10.3)
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Clustering (3.10.3):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Geometry (3.10.3):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/GeometryUtils (3.10.3):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Heatmap (3.10.3):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/QuadTree (3.10.3):
+    - GoogleMaps
+  - GoogleMaps (4.2.0):
+    - GoogleMaps/Maps (= 4.2.0)
+  - GoogleMaps/Base (4.2.0)
+  - GoogleMaps/Maps (4.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (4.2.0):
+    - GoogleMaps/Base (= 4.2.0)
+  - IQKeyboardManager (6.5.6)
+  - KDCircularProgress (1.5.4)
+  - Kingfisher (6.3.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - Siren (5.8.1)
+
+DEPENDENCIES:
+  - AARatingBar
+  - Alamofire
+  - Google-Maps-iOS-Utils
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManager
+  - KDCircularProgress
+  - Kingfisher
+  - NVActivityIndicatorView (~> 4.7.0)
+  - Siren
+
+SPEC REPOS:
+  trunk:
+    - AARatingBar
+    - Alamofire
+    - Google-Maps-iOS-Utils
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManager
+    - KDCircularProgress
+    - Kingfisher
+    - NVActivityIndicatorView
+    - Siren
+
+SPEC CHECKSUMS:
+  AARatingBar: dc54d24687ae97688ffdb29738332d0bc5c0c09f
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Google-Maps-iOS-Utils: 95d5ca4d2004314eff88c1819b969db6cac37ab6
+  GoogleMaps: eb03e327edfd70b06de1e6e321653f73712df7ad
+  GooglePlaces: 196a9dd88580dcb3f3df46f415057703d0d2a310
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  KDCircularProgress: 98200c6b8e85d22bc04eb644721d3b1e12b0686b
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  Siren: de768099aff1f1c9acda4247064788a4940b4bf3
+
+PODFILE CHECKSUM: 8f1b06083bdc3656a8c2c55aecc7e28942242437
+
+COCOAPODS: 1.10.1
