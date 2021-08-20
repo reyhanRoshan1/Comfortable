@@ -36,6 +36,14 @@ class AccountVC: UIViewController {
     }
     
     @IBAction func btnLogoutAction(_ sender: Any) {
+        
+            let story = UIStoryboard(name: "Main", bundle:nil)
+            let vc = story.instantiateViewController(withIdentifier: "ChooseAccountVC") as! ChooseAccountVC
+            let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.isNavigationBarHidden = true
+            UIApplication.shared.windows.first?.rootViewController = navigationController
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        
     }
     
     

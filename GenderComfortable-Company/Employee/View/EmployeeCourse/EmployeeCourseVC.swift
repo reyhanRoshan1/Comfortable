@@ -14,18 +14,58 @@ class EmployeeCourseVC: UIViewController {
     @IBOutlet weak var lessonTblVw: UITableView!
     @IBOutlet weak var tfDesc: UITextView!
     @IBOutlet weak var tfCert: UITextView!
+    @IBOutlet weak var vwCourseComplteHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var vwCourseComplete: ViewCustom!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setdelegateDatasource()
+        self.lblUnderLess.isHidden = false
+        self.lblUnderMore.isHidden = true
+        vwCourseComplteHeightConstraint.constant = 0
     }
     
     @IBAction func btnBackAction(_ sender: Any) {
         UtilityManager.shared.popController(Vw: self)
     }
     @IBAction func btnTakeTestAction(_ sender: Any) {
+        vwCourseComplete.isHidden = false
+        vwCourseComplteHeightConstraint.constant = 311
+        UIView.animate(withDuration: 1.0) {
+            self.view.layoutIfNeeded()
+        } completion: { (_) in
+            
+        }
+
+        
+    }
+    @IBAction func btnTakeTestEarnPointAction(_ sender: Any) {
+        UtilityManager.shared.push(identifier: "EmployeeTestVC", Vw: self, storyBoard: .employeeCourse)
+    }
+    
+    @IBAction func btnBackToHomeAction(_ sender: Any) {
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: EmployeeHomeVC.self) {
+                self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        if scrollView.contentOffset.x == self.view.frame.size.width{
+          print("hello im greater")
+            self.lblUnderLess.isHidden = true
+            self.lblUnderMore.isHidden = false
+        }else if scrollView.contentOffset.x == 0{
+            self.lblUnderLess.isHidden = false
+            self.lblUnderMore.isHidden = true
+            print("i am zero")
+        }
     }
     
 }

@@ -135,12 +135,25 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7h-Wf-DZx">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7h-Wf-DZx" customClass="CosmosView" customModule="Cosmos">
                                     <rect key="frame" x="60" y="5" width="263" height="32"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="32" id="ZMU-sR-MQt"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                            <real key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="rating"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="unrating"/>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -272,10 +285,16 @@
             <point key="canvasLocation" x="-23.199999999999999" y="64.31784107946028"/>
         </view>
     </objects>
+    <designables>
+        <designable name="r7h-Wf-DZx">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Ellipse 7" width="66" height="66"/>
         <image name="default" width="228.66667175292969" height="92"/>
         <image name="rating" width="20" height="21"/>
+        <image name="unrating" width="32" height="32"/>
         <namedColor name="NeutralGray">
             <color red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

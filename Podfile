@@ -15,7 +15,7 @@ target 'GenderComfortable-Company' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Google-Maps-iOS-Utils'
-  
+  pod 'Cosmos'
   
   
 end

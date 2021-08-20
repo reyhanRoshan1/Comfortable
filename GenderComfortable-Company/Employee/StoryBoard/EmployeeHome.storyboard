@@ -42,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoR-fF-zVh">
-                                        <rect key="frame" x="355" y="6.5" width="45" height="31"/>
+                                        <rect key="frame" x="355" y="4.5" width="45" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="6cD-Lc-dhW"/>
                                         </constraints>
@@ -70,7 +70,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Were you given a license key for your company's certification course?  Add it to your account here to access the training." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlh-tZ-YFR">
-                                            <rect key="frame" x="16" y="13" width="382" height="56"/>
+                                            <rect key="frame" x="16" y="13" width="382" height="67.5"/>
                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                             <color key="textColor" name="NeutralGray"/>
                                             <nil key="highlightedColor"/>
@@ -91,13 +91,13 @@
                                             <rect key="frame" x="16" y="0.0" width="382" height="21"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWr-Wt-CwS">
-                                                    <rect key="frame" x="320.5" y="0.0" width="61.5" height="21"/>
+                                                    <rect key="frame" x="312.5" y="0.0" width="69.5" height="21"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                     <color key="textColor" name="btnColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="VWx-qu-2CS">
-                                                    <rect key="frame" x="293.5" y="1" width="19" height="19"/>
+                                                    <rect key="frame" x="285.5" y="1" width="19" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19" id="Mc5-av-0H7"/>
                                                         <constraint firstAttribute="width" constant="19" id="hLa-Y3-Rvj"/>
@@ -229,7 +229,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter license key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yN-hk-h41">
-                                <rect key="frame" x="18" y="103" width="182" height="28"/>
+                                <rect key="frame" x="18" y="103" width="204" height="34"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
                                 <color key="textColor" name="labelColor"/>
                                 <nil key="highlightedColor"/>
@@ -426,7 +426,7 @@ Businesses</string>
                                     <constraint firstAttribute="bottom" secondItem="rC1-bl-Gp4" secondAttribute="bottom" id="yKo-Zm-aCO"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="i0g-08-M2K">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="i0g-08-M2K">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -480,29 +480,30 @@ Businesses</string>
                                                         <constraint firstItem="xx9-Fn-nxa" firstAttribute="centerY" secondItem="oSE-h1-QZM" secondAttribute="centerY" id="rW7-9l-BRY"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfR-wI-aX1">
-                                                    <rect key="frame" x="19" y="73" width="100" height="20"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfR-wI-aX1" customClass="CosmosView" customModule="Cosmos">
+                                                    <rect key="frame" x="19" y="73" width="100" height="25"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="WRn-Ga-dSJ"/>
-                                                        <constraint firstAttribute="height" constant="20" id="i9o-RY-Ihs"/>
+                                                        <constraint firstAttribute="height" constant="25" id="i9o-RY-Ihs"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="filledIcon" value="rating"/>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="unFilledIcon" value="rating"/>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="spaceOffset">
-                                                            <real key="value" value="0.0"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="20"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
                                                             <integer key="value" value="5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="2"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="rating"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="unrating"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
                                                             <real key="value" value="2"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Were you given a license key for your company's certification course?  Add it to your account here to access the training." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nay-Ql-oY2">
-                                                    <rect key="frame" x="20" y="98" width="374" height="47"/>
+                                                    <rect key="frame" x="20" y="103" width="374" height="42"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                     <color key="textColor" name="NeutralGray"/>
                                                     <nil key="highlightedColor"/>
@@ -545,10 +546,17 @@ Businesses</string>
             <point key="canvasLocation" x="1461" y="42"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="g2A-kf-IJF">
+            <size key="intrinsicContentSize" width="109.5" height="24"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Ellipse 7" width="66" height="66"/>
         <image name="addIcon-1" width="20" height="20"/>
         <image name="backIcon" width="44" height="44"/>
+        <image name="rating" width="20" height="21"/>
+        <image name="unrating" width="32" height="32"/>
         <namedColor name="NeutralGray">
             <color red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

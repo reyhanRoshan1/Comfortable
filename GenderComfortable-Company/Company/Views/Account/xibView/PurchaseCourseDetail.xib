@@ -113,7 +113,7 @@
                                     <color key="textColor" name="btnColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQn-c4-oC2">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQn-c4-oC2">
                                     <rect key="frame" x="0.0" y="38" width="130" height="2"/>
                                     <color key="backgroundColor" red="0.96078431369999995" green="0.51764705879999995" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
@@ -335,6 +335,9 @@
                                 <constraint firstItem="acC-dc-Jka" firstAttribute="centerY" secondItem="xi2-vQ-Vae" secondAttribute="centerY" id="hoH-cy-JRG"/>
                                 <constraint firstItem="acC-dc-Jka" firstAttribute="leading" secondItem="xi2-vQ-Vae" secondAttribute="leading" id="iGp-Zb-IIq"/>
                             </constraints>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="PiB-Qb-91d"/>
+                            </connections>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -362,6 +365,11 @@
                 <constraint firstItem="ZBL-4M-kAR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="v1S-Dq-ot6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblUnderCourseDetail" destination="LqQ-pC-STy" id="kfc-cs-yAK"/>
+                <outlet property="lblUnderCourseStats" destination="MQn-c4-oC2" id="bsc-bK-F4H"/>
+                <outlet property="scrollVw" destination="xi2-vQ-Vae" id="n9m-iQ-6wL"/>
+            </connections>
             <point key="canvasLocation" x="-23.199999999999999" y="64.31784107946028"/>
         </view>
     </objects>

@@ -25,9 +25,11 @@ class EmployeeTestVC: UIViewController {
     }
     
     @IBAction func btnBackAction(_ sender: Any) {
+        UtilityManager.shared.popController(Vw: self)
     }
     
     @IBAction func btnSubmitAction(_ sender: Any) {
+        UtilityManager.shared.push(identifier: "EmployeeTestResultVC", Vw: self, storyBoard: .employeeCourse)
     }
     
 }

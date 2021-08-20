@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CompanyDetailVC: UIViewController {
+class CompanyDetailVC: UIViewController,UIScrollViewDelegate {
 
     @IBOutlet weak var companyDetailTblVw: UITableView!
     override func viewDidLoad() {
@@ -25,6 +25,8 @@ class CompanyDetailVC: UIViewController {
     @IBAction func btnBackAction(_ sender: Any) {
         UtilityManager.shared.popController(Vw: self)
     }
+    
+    
     
 }
 

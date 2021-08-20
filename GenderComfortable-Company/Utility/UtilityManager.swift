@@ -11,8 +11,6 @@ class UtilityManager: NSObject {
     
     public static var shared = UtilityManager()
     
-    
-    
     private override init() {}
     
     var entity : String {
@@ -46,5 +44,6 @@ class UtilityManager: NSObject {
     func popController(Vw:UIViewController){
         Vw.navigationController?.popViewController(animated: true)
     }
+    
     
 }

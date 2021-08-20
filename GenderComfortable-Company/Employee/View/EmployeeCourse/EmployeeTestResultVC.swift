@@ -42,4 +42,12 @@ class EmployeeTestResultVC: UIViewController {
         vwResultProgres.progress = value
     }
 
+    @IBAction func btnBackToHomeAction(_ sender: Any) {
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: EmployeeHomeVC.self) {
+                self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+    }
 }

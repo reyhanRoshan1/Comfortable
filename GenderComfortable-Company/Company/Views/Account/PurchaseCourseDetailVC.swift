@@ -16,7 +16,7 @@ class PurchaseCourseDetailVC: UIViewController {
         // Do any additional setup after loading the view.
         setDelegatDatasource()
         
-       
+        PurchaseCourseDetailView.share?.initialise()
     }
     
     @IBAction func btnBackAction(_ sender: Any) {
@@ -61,7 +61,7 @@ extension PurchaseCourseDetailVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let Vc:PurchaseCourseDetailView = PurchaseCourseDetailView.instance
-       
+        
         return Vc
         
     }

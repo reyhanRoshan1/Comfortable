@@ -55,6 +55,15 @@ class EmpCourseCompanyListingVC: UIViewController {
         vwLicenseKey.isHidden = true
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        if scrollView.contentOffset.x < self.view.frame.size.width{
+          print("hello im greater")
+        }else{
+            print("i am zero")
+        }
+    }
+    
 }
 
 extension EmpCourseCompanyListingVC : UICollectionViewDelegate,UICollectionViewDataSource{
