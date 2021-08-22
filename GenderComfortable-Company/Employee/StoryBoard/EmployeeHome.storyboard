@@ -306,7 +306,7 @@ Businesses</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfW-7W-g6g">
-                                        <rect key="frame" x="270" y="30.5" width="121" height="30.5"/>
+                                        <rect key="frame" x="254" y="26.5" width="137" height="34.5"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Activate account">
@@ -330,6 +330,7 @@ Businesses</string>
                                     <constraint firstAttribute="height" constant="62" id="MAk-1k-PpX"/>
                                     <constraint firstAttribute="bottom" secondItem="rfW-7W-g6g" secondAttribute="bottom" constant="1" id="T8e-55-leK"/>
                                     <constraint firstItem="yF7-3k-P1o" firstAttribute="centerY" secondItem="2dP-oW-spS" secondAttribute="centerY" id="WHN-Ie-WbF"/>
+                                    <constraint firstAttribute="bottom" secondItem="yF7-3k-P1o" secondAttribute="bottom" constant="10" id="c3O-W9-Tek"/>
                                     <constraint firstAttribute="trailing" secondItem="rfW-7W-g6g" secondAttribute="trailing" constant="23" id="e8d-31-cI8"/>
                                     <constraint firstItem="2dP-oW-spS" firstAttribute="centerY" secondItem="wal-8R-erb" secondAttribute="centerY" id="paf-tC-SEd"/>
                                     <constraint firstItem="yF7-3k-P1o" firstAttribute="leading" secondItem="2dP-oW-spS" secondAttribute="trailing" constant="11" id="ptH-f4-wqO"/>
@@ -406,7 +407,7 @@ Businesses</string>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y4-EX-4di">
-                                        <rect key="frame" x="355" y="6.5" width="45" height="31"/>
+                                        <rect key="frame" x="355" y="4.5" width="45" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="mvR-BN-f43"/>
                                         </constraints>
@@ -547,6 +548,9 @@ Businesses</string>
         </scene>
     </scenes>
     <designables>
+        <designable name="PfR-wI-aX1">
+            <size key="intrinsicContentSize" width="132.76953125" height="20"/>
+        </designable>
         <designable name="g2A-kf-IJF">
             <size key="intrinsicContentSize" width="109.5" height="24"/>
         </designable>

@@ -66,7 +66,7 @@ class EmpCourseCompanyListingVC: UIViewController {
     
 }
 
-extension EmpCourseCompanyListingVC : UICollectionViewDelegate,UICollectionViewDataSource{
+extension EmpCourseCompanyListingVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func setDeleDatasource(){
         courseCompClcVw.delegate = self
@@ -92,7 +92,7 @@ extension EmpCourseCompanyListingVC : UICollectionViewDelegate,UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: (courseCompClcVw.frame.size.width / 1), height: 230)
+        return CGSize(width: (courseCompClcVw.frame.size.width / 1), height: (courseCompClcVw.frame.size.width / 1) - 100)
     }
     
     

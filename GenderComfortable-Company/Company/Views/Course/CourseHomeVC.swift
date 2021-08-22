@@ -37,7 +37,7 @@ class CourseHomeVC: UIViewController {
 }
 
 
-extension CourseHomeVC : UICollectionViewDelegate,UICollectionViewDataSource{
+extension CourseHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func setDeleDatasource(){
         courseClcVw.delegate = self
@@ -62,7 +62,7 @@ extension CourseHomeVC : UICollectionViewDelegate,UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: (courseClcVw.frame.size.width / 1), height: 230)
+        return CGSize(width: (courseClcVw.frame.size.width / 1), height: (courseClcVw.frame.size.width / 1) - 100)
     }
     
     
